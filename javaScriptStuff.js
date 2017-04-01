@@ -11,7 +11,7 @@ var numberQuestions = 3;
 function test1() {
   var ans = document.getElementById("p1Answer").value;
   if(isNaN(ans)) {
-    document.getElementById("checkAnswer").innerHTML= "The answer must be a number";
+    document.getElementById("checkAnswer").innerHTML= "Must be a number";
     document.getElementById("checkAnswer").classList.remove("correct");
     document.getElementById("checkAnswer").classList.add("incorrect");
     document.getElementById("checkAnswer").classList.remove("hideMess");
@@ -39,7 +39,7 @@ function test1() {
 function test2() {
   var ans = document.getElementById("p2Answer").value;
   if(isNaN(ans)) {
-    document.getElementById("checkAnswer").innerHTML= "The answer must be a number";
+    document.getElementById("checkAnswer").innerHTML= "Must be a number";
     document.getElementById("checkAnswer").classList.remove("correct");
     document.getElementById("checkAnswer").classList.add("incorrect");
     document.getElementById("checkAnswer").classList.remove("hideMess");
@@ -67,7 +67,7 @@ function test2() {
 function test3() {
   var ans = document.getElementById("p3Answer").value;
   if(isNaN(ans)) {
-    document.getElementById("checkAnswer").innerHTML= "The answer must be a number";
+    document.getElementById("checkAnswer").innerHTML= "Must be a number";
     document.getElementById("checkAnswer").classList.remove("correct");
     document.getElementById("checkAnswer").classList.add("incorrect");
     document.getElementById("checkAnswer").classList.remove("hideMess");
@@ -150,7 +150,8 @@ function getCookie(cname) {
 function finalScore() {
   var score = Number(getCookie("score1")) + Number(getCookie("score2")) +
   Number(getCookie("score3"));
+  var percent = ((score/numberQuestions)*100);
 
   document.getElementById("final").innerHTML="You scored: " + score + "/" +
-  numberQuestions + "!  That's " + ((score/numberQuestions)*100) + "%";
+  numberQuestions + "!  That's " + percent.toFixed(1) + "%";
 }
