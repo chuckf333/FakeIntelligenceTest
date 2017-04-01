@@ -153,5 +153,5 @@ function finalScore() {
   var percent = ((score/numberQuestions)*100);
 
   document.getElementById("final").innerHTML="You scored: " + score + "/" +
-  numberQuestions + "!  That's " + percent.toFixed(1) + "%";
+  numberQuestions + "!  That's " + percent.toFixed(2) + "%";
 }
