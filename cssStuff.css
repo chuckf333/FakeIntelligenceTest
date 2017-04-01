@@ -1,0 +1,133 @@
+/*Charles Franklin*/
+/*
+background gradient borrowed from:
+http://lea.verou.me/2010/12/checkered-stripes-other-background-patterns-with-css3-gradients/
+Author: Lea Verou
+*/
+body{
+  /*background-color: lightblue;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;*/
+
+  background-color: #0ae;
+  webkit-background-size: 20px 20px;
+	-moz-background-size: 20px 20px;
+	background-size: 20px 20px;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%,
+    color-stop(.5, rgba(255, 255, 	255, .2)), color-stop(.5, transparent),
+    to(transparent));
+	background-image: -moz-linear-gradient(rgba(255, 255, 255, .2) 50%,
+  transparent 50%, 	transparent);
+	background-image: -o-linear-gradient(rgba(255, 255, 255, .2) 50%,
+  transparent 50%, 		transparent);
+	background-image: linear-gradient(rgba(255, 255, 255, .2) 50%,
+  transparent 50%, 		transparent);
+}
+h1{
+  background: linear-gradient(to right, #00ffff 0%, #ff99ff 100%);
+  color: deeppink;
+  width: 400px;
+  border: 3px;
+  border-style: groove;
+  border-color: deeppink;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+h1::before{
+  content: text("")
+}
+h1::after{
+  content: text("")
+}
+h3{
+  background: linear-gradient(to right, #00ffff 0%, #ff99ff 100%);
+  opacity: .9;
+  color: deeppink;
+  width: 400px;
+  border: 2px;
+  border-style: groove;
+  border-color: deeppink;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+p{
+  border: 3px;
+  border-style: dotted;
+  border-color: deeppink;
+  color: deeppink;
+  width: 600px;
+  padding-left: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-indent: 25px;
+  font-family: monospace;
+  font-size: 14pt;
+}
+div{
+  background: linear-gradient(to bottom right, #00ffff 0%, #ff99ff 100%);
+  opacity: .9;
+  width: 620px;
+  border: 5px;
+  border-style: groove;
+  border-color: deeppink;
+  margin: auto;
+}
+ol{
+  background: linear-gradient(to left, #00ffff 0%, #ff99ff 100%);
+  opacity: .9;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14pt;
+}
+li{
+  color: black;
+  font-weight: bold;
+  font-family: monospace;
+}
+h3 ~ li{
+  margin-left: 50px;
+  font-family: monospace;
+}
+h3 ~ p{
+  border-style: none;
+  text-indent: 25px;
+}
+.button {
+    background-color: chartreuse;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 4px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+}
+.buttonx:hover {
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.24),0 10px 15px 0 rgba(0,0,0,0.19);
+}
+#checkAnswer {
+  font-size: 14pt;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: bold;
+}
+.correct{
+  color: green;
+}
+.incorrect{
+  color: red;
+}
+.hideMess{
+  opacity: 0.0;
+}
+.showMess{
+  opacity: 1.0;
+}

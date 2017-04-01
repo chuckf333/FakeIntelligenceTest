@@ -1,0 +1,37 @@
+<!-- Charles Franklin -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="cssStuff.css">
+    <title>Intelligence Test, Page 1</title>
+    <script type="text/javascript" src="javaScriptStuff.js"></script>
+  </head>
+  <body lang="en-US">
+    <h1>Welcome to my Intelligence Test!</h1>
+    <div>
+      <p>
+        I will provide a few examples on each page of a number puzzle that
+        you must solve.  Once you have it or choose to give up,
+        click the "Submit" button at the end to continue to the next page.
+      </p>
+    </div>
+    <div>
+      <h3>Test 1</h3>
+      <ol>
+        <li>20, 18 -> 4</li>
+        <li>13, 16 -> 8</li>
+        <li>2, 10 -> 256</li>
+        <li>3, 7 -> 16</li>
+        <li>23, 10 -> 8192</li>
+        <li>10, 5 -> <input type="text" id="p1Answer" size="5" maxlength="4"
+          oninput="answerCheck(1)">
+        <span id="checkAnswer" class="hideMess">Hidden message</span></li>
+      </ol>
+      <br><br><br><br><br>
+      <button class="button buttonx" onclick="submitButton(1)">
+        Submit
+      </button>
+    </div>
+  </body>
+</html>
